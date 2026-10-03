@@ -16,10 +16,8 @@ def swap_columns(df, col1, col2):
 
 df = swap_columns(df, "Age", "Fare")
 
-print("I swapped the Age and Fare columns:")
 print(df.columns)
 
 df = df[sorted(df.columns)]
 
-print("\nNow the columns are sorted alphabetically:")
 print(df.columns)

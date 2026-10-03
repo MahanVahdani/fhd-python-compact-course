@@ -6,8 +6,5 @@ n = int(len(df) * 0.05)
 
 df = df.iloc[n:-n]
 
-print("I removed the first and last 5% of the rows.")
-print("Rows left:", len(df))
-
-print("\nHere is the updated data:")
 print(df.head())
+print("Rows:", len(df))
