@@ -6,5 +6,5 @@ df.set_index("Name", inplace=True)
 
 df.loc[df["Age"] < 18, "Age"] = 18
 
-print((df['Age']))
-
+print(df.columns)
+print(df.isna().sum())
