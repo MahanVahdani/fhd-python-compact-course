@@ -22,4 +22,11 @@ print(df.columns)
 
 df = df[sorted(df.columns)]
 
-print(df.columns)
+n = int(len(df) * 0.05)
+
+df = df.iloc[n:-n]
+
+print(df)
+print("Number of rows:", len(df))
+
+print(df.tail())
